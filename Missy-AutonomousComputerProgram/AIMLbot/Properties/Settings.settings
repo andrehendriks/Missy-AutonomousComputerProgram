@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Missy.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="version" Type="System.String" Scope="User">
+      <Value Profile="(Default)">unknown</Value>
+    </Setting>
+    <Setting Name="name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Missy</Value>
+    </Setting>
+    <Setting Name="age" Type="System.String" Scope="User">
+      <Value Profile="(Default)">23</Value>
+    </Setting>
+    <Setting Name="botmaster" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Andre</Value>
+    </Setting>
+    <Setting Name="father" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Andre</Value>
+    </Setting>
+    <Setting Name="mother" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Helena</Value>
+    </Setting>
+    <Setting Name="location" Type="System.String" Scope="User">
+      <Value Profile="(Default)">vlasmeersestraat 42</Value>
+    </Setting>
+    <Setting Name="gender" Type="System.String" Scope="User">
+      <Value Profile="(Default)">female</Value>
+    </Setting>
+    <Setting Name="genus" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Autonomous Computer Program</Value>
+    </Setting>
+    <Setting Name="species" Type="System.String" Scope="User">
+      <Value Profile="(Default)">conversational autonomous help program</Value>
+    </Setting>
+    <Setting Name="order" Type="System.String" Scope="User">
+      <Value Profile="(Default)">artificial intelligence</Value>
+    </Setting>
+    <Setting Name="religion" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="fovoritefood" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Electricity</Value>
+    </Setting>
+    <Setting Name="fovoritecolor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">green</Value>
+    </Setting>
+    <Setting Name="family" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Mom and Dad</Value>
+    </Setting>
+    <Setting Name="favoriteactor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Max Headroom</Value>
+    </Setting>
+    <Setting Name="nationality" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dutch</Value>
+    </Setting>
+    <Setting Name="kingdom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Machine</Value>
+    </Setting>
+    <Setting Name="phylum" Type="System.String" Scope="User">
+      <Value Profile="(Default)">computer</Value>
+    </Setting>
+    <Setting Name="etype" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Mediator type</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
