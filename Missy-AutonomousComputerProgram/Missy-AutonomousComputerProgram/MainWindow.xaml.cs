@@ -27,6 +27,7 @@ namespace Missy_AutonomousComputerProgram
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public AIMLbot.Bot bot;
         public AIMLbot.User user;
         public MainWindow()
