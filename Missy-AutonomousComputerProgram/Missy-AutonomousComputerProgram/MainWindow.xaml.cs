@@ -45,11 +45,11 @@ namespace Missy_AutonomousComputerProgram
         
         public string getoutput(string Input)
         {
-            
-            SpVoice synth = new SpVoice();
+
+            SpeechLib.SpVoice synth = new SpeechLib.SpVoice();
             Request request = new Request(Input, user, bot);
             Result result = bot.Chat(request);
-            synth.Speak(result.Output);
+            synth.Speak(result.Output, (SpeechVoiceSpeakFlags.SVSFDefault));
             return(result.Output);
         }
         String Input = null;

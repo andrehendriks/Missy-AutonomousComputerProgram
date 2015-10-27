@@ -28,6 +28,7 @@
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>Processing COM reference "SpeechLib" from path "C:\Program Files (x86)\Common Files\Microsoft Shared\Speech\Platform\v11.0\mssps.dll". At least one of the arguments for 'SpStreamFormatConverter.GetFormat' cannot be marshaled by the runtime marshaler.  Such arguments will therefore be passed as a pointer and may require unsafe code to manipulate.</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
