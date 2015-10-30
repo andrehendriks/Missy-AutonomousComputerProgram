@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using SpeechLib;
 using AIMLbot;
 using System.Runtime.InteropServices;
+using System.Threading;
+using Avatarator;
 
 namespace Missy_AutonomousComputerProgram
 {
@@ -39,8 +41,12 @@ namespace Missy_AutonomousComputerProgram
             bot.isAcceptingUserInput = false;
             loader.loadAIML(bot.PathToAIML);
             bot.isAcceptingUserInput = true;
-            
+           
             InitializeComponent();
+
+           
+                
+            
         }
         
         
@@ -72,6 +78,13 @@ namespace Missy_AutonomousComputerProgram
                 textBox.Text = "";
 
             }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+
+            
         }
     }
 }
