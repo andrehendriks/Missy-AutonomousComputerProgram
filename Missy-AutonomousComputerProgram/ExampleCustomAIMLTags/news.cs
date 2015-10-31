@@ -4,6 +4,7 @@ using System.Net;
 using System.Text;
 using System.IO;
 using AIMLbot.Utils;
+using System.Globalization;
 
 namespace ExampleCustomAIMLTags
 {
@@ -23,14 +24,14 @@ namespace ExampleCustomAIMLTags
 
         protected override string ProcessChange()
         {
-            if (this.templateNode.Name.ToLower() == "news")
+            if (this.templateNode.Name.ToLower(CultureInfo.CurrentCulture) == "news")
             {
                 bool includeDescription = false;
                 if (this.templateNode.Attributes.Count == 1)
                 {
-                    if (this.templateNode.Attributes[0].Name.ToLower() == "description")
+                    if (this.templateNode.Attributes[0].Name.ToLower(CultureInfo.CurrentCulture) == "description")
                     {
-                        if (this.templateNode.Attributes[0].Value.ToLower() == "true")
+                        if (this.templateNode.Attributes[0].Value.ToLower(CultureInfo.CurrentCulture) == "true")
                         {
                             includeDescription = true;
                         }

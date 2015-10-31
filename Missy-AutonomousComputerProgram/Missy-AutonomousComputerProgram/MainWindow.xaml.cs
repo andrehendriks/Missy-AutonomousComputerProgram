@@ -41,15 +41,28 @@ namespace Missy_AutonomousComputerProgram
             bot.isAcceptingUserInput = false;
             loader.loadAIML(bot.PathToAIML);
             bot.isAcceptingUserInput = true;
-           
+            // Set the apartment state
+            newWindowThread.SetApartmentState(ApartmentState.STA);
+            // Make the thread a background thread
+            newWindowThread.IsBackground = false;
+            // Start the thread
+            newWindowThread.Start();
             InitializeComponent();
 
            
                 
             
         }
-        
-        
+        // Create a thread
+        Thread newWindowThread = new Thread(new ThreadStart(() =>
+        {
+            // Create and show the Window
+            Window1 tempWindow = new Window1();
+            tempWindow.Show();
+            // Start the Dispatcher Processing
+            System.Windows.Threading.Dispatcher.Run();
+        }));
+
         public string getoutput(string Input)
         {
 

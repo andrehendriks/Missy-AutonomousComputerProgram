@@ -1,6 +1,7 @@
 using System;
 using System.Xml;
 using AIMLbot.Utils;
+using System.Globalization;
 
 namespace ExampleCustomAIMLTags
 {
@@ -53,7 +54,7 @@ namespace ExampleCustomAIMLTags
 
         protected override string ProcessChange()
         {
-            if (this.templateNode.Name.ToLower() == "testtag")
+            if (this.templateNode.Name.ToLower(CultureInfo.CurrentCulture) == "testtag")
             {
                 return "Test tag works! "+this.templateNode.InnerText;
             }

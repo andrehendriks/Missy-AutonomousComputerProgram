@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Missy_AutonomousComputerProgram"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="250" Width="497"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="407" KeyDown="textBox_KeyDown"/>
-        <Button x:Name="button" Content="Enter" Margin="422,286,10,0" VerticalAlignment="Top" Click="button_Click"/>
+        Title="Missy The Autonomous Computer Program" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}">
+        <TextBlock x:Name="textBlock" Margin="10,10,10,59" TextWrapping="Wrap"/>
+        <TextBox x:Name="textBox" Margin="10,0,100,10" TextWrapping="Wrap" KeyDown="textBox_KeyDown" Height="23" VerticalAlignment="Bottom"/>
+        <Button x:Name="button" Content="Enter" Margin="0,0,10,10" Click="button_Click" HorizontalAlignment="Right" Width="85" Height="23" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>

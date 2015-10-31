@@ -3,6 +3,7 @@ using System.Xml;
 using AIMLbot.Utils;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace ExampleCustomAIMLTags
 {
@@ -21,12 +22,12 @@ namespace ExampleCustomAIMLTags
 
         protected override string ProcessChange()
         {
-            if (this.templateNode.Name.ToLower() == "piglatin")
+            if (this.templateNode.Name.ToLower(CultureInfo.CurrentCulture) == "piglatin")
             {
                 if (this.templateNode.InnerText.Length > 0)
                 {
                     StringBuilder result = new StringBuilder();
-                    string[] words = this.templateNode.InnerText.ToLower().Split(" ".ToCharArray());
+                    string[] words = this.templateNode.InnerText.ToLower(CultureInfo.CurrentCulture).Split(" ".ToCharArray());
 
                     foreach (string word in words)
                     {

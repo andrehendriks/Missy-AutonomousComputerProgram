@@ -1,6 +1,7 @@
 using System;
 using System.Text;
 using AIMLbot.Utils;
+using System.Globalization;
 
 namespace ExampleCustomAIMLTags
 {
@@ -14,7 +15,7 @@ namespace ExampleCustomAIMLTags
 
         protected override string ProcessChange()
         {
-            if (this.templateNode.Name.ToLower() == "system")
+            if (this.templateNode.Name.ToLower(CultureInfo.CurrentCulture) == "system")
             {
                 return "Override default tag implementation works correctly";
             }

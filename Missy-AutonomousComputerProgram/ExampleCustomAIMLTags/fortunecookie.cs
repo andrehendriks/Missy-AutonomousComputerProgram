@@ -1,6 +1,7 @@
 using System;
 using System.Xml;
-using AIMLbot.Utils; 
+using AIMLbot.Utils;
+using System.Globalization;
 
 namespace ExampleCustomAIMLTags
 {
@@ -17,7 +18,7 @@ namespace ExampleCustomAIMLTags
 
         protected override string ProcessChange()
         {
-            if (this.templateNode.Name.ToLower() == "fortunecookie")
+            if (this.templateNode.Name.ToLower(CultureInfo.CurrentCulture) == "fortunecookie")
             {
                 com.fullerdata.www.FullerDataFortuneCookie fc = new ExampleCustomAIMLTags.com.fullerdata.www.FullerDataFortuneCookie();
                 string fortune = fc.GetFortuneCookie();
