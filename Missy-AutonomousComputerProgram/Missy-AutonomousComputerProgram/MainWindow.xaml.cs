@@ -16,7 +16,7 @@ using SpeechLib;
 using AIMLbot;
 using System.Runtime.InteropServices;
 using System.Threading;
-using Avatarator;
+
 
 namespace Missy_AutonomousComputerProgram
 {
@@ -29,7 +29,7 @@ namespace Missy_AutonomousComputerProgram
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        private SpeechLib.ISpeechRecognizer recognizer;
         public AIMLbot.Bot bot;
         public AIMLbot.User user;
         public MainWindow()
@@ -41,28 +41,14 @@ namespace Missy_AutonomousComputerProgram
             bot.isAcceptingUserInput = false;
             loader.loadAIML(bot.PathToAIML);
             bot.isAcceptingUserInput = true;
-            // Set the apartment state
-            newWindowThread.SetApartmentState(ApartmentState.STA);
-            // Make the thread a background thread
-            newWindowThread.IsBackground = false;
-            // Start the thread
-            newWindowThread.Start();
+            
             InitializeComponent();
 
            
                 
             
         }
-        // Create a thread
-        Thread newWindowThread = new Thread(new ThreadStart(() =>
-        {
-            // Create and show the Window
-            Window1 tempWindow = new Window1();
-            tempWindow.Show();
-            // Start the Dispatcher Processing
-            System.Windows.Threading.Dispatcher.Run();
-        }));
-
+        
         public string getoutput(string Input)
         {
 
@@ -93,11 +79,9 @@ namespace Missy_AutonomousComputerProgram
             }
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
 
-            
         }
     }
 }
